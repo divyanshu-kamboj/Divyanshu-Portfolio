@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Thank You</title>
+  <style>
+    /* Reset */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background: linear-gradient(135deg, #6a11cb 0%, #2575fc 100%);
+      color: #fff;
+      text-align: center;
+      padding: 20px;
+    }
+
+    .thank-container {
+      background: rgba(255, 255, 255, 0.1);
+      padding: 50px 30px;
+      border-radius: 20px;
+      backdrop-filter: blur(10px);
+      box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+      animation: fadeIn 1s ease-in-out;
+      max-width: 500px;
+      width: 100%;
+    }
+
+    .thank-container h1 {
+      font-size: 2.5rem;
+      margin-bottom: 20px;
+    }
+
+    .thank-container p {
+      font-size: 1.1rem;
+      margin-bottom: 30px;
+    }
+
+    .thank-container a {
+      text-decoration: none;
+      background: #fff;
+      color: #2575fc;
+      padding: 12px 25px;
+      border-radius: 30px;
+      font-weight: bold;
+      transition: 0.3s;
+      display: inline-block;
+    }
+
+    .thank-container a:hover {
+      background: #2575fc;
+      color: #fff;
+      transform: scale(1.05);
+    }
+
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    /* 📱 Responsive Design */
+    @media (max-width: 768px) {
+      .thank-container {
+        padding: 30px 20px;
+      }
+      .thank-container h1 {
+        font-size: 2rem;
+      }
+      .thank-container p {
+        font-size: 1rem;
+      }
+      .thank-container a {
+        padding: 10px 20px;
+        font-size: 0.9rem;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .thank-container {
+        padding: 25px 15px;
+      }
+      .thank-container h1 {
+        font-size: 1.6rem;
+      }
+      .thank-container p {
+        font-size: 0.95rem;
+      }
+      .thank-container a {
+        padding: 8px 16px;
+        font-size: 0.85rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="thank-container">
+    <h1>🎉 Thank You!</h1>
+    <p>Your message has been sent successfully. I’ll get back to you soon.</p>
+    <a href="index.html">⬅ Back to Home</a>
+  </div>
+</body>
+</html>
